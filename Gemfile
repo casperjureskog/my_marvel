@@ -21,6 +21,7 @@ gem 'bootsnap', require: false
 
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'pry-byebug'
   gem 'rspec-rails'
   gem 'cucumber-rails', require: false
