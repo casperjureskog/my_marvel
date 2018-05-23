@@ -8,4 +8,3 @@ Feature: User reads cartoon
    Then I should see "Thor"
    And I should see "Data provided by Marvel. © 2018 MARVEL"
    And I should see Cover image
-   
