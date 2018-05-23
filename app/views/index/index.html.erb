@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="header">
+    <h1><%= @story['title'] %></h1>
+  </div>
+  <div class="row">
+    <div class="col-5">
+      <img class="img-fluid rounded" src="<%= @story['thumbnail']['path'] %>.<%= @story['thumbnail']['extension'] %>">
+    </div>
+    <div class="col-5">
+      <%= @story['description'] %>
+    </div>
+    <div class="col-2"></div>
+  </div>
+    <h2 class="header">Characters</h2>
+  <div class="row">
+    <%- @characters.each do |character| %>
+    <div class="col-4">
+      <h4><%= character['name'] %></h4>
+      <img class="img-fluid rounded" src="<%= character['thumbnail']['path'] %>.<%= character['thumbnail']['extension'] %>">
+    </div>
+    <%- end %>  
+  </div>
+  <%= @attribute_text %>
+</div>
+
+
